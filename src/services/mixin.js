@@ -1,5 +1,10 @@
 import { fontSize, color, fontWeight } from 'services/theme'
 
+export const pageFullHeight = `
+  height: calc(100vh - 4.5rem);
+  min-height: calc(100vh - 4.5rem);
+`
+
 export const linkAnimation = `
   transition: all .2s ease-out;
   will-change: transform, color;

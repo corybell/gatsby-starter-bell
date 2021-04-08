@@ -6,6 +6,7 @@ import CssBaseline from 'components/CssBaseline'
 import Nav from 'components/Nav'
 import Footer from 'components/Footer'
 import { maxWidth, spacing } from 'services/theme'
+import { pageFullHeight } from 'services/mixin'
 
 const Container = styled.div`
   width: 100%;
@@ -14,8 +15,7 @@ const Container = styled.div`
   padding: 1rem ${spacing[8]};
   z-index: 0;
   background-color: #eaeaea;
-  height: calc(100vh - 4.5rem);
-  min-height: calc(100vh - 4.5rem);
+  ${pageFullHeight}
 `
 
 const Main = styled.main`

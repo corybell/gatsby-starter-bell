@@ -2,12 +2,12 @@ import "@fontsource/montserrat/900.css"
 import '@fontsource/montserrat'
 import React from 'react'
 import styled from 'styled-components'
+import { pageFullHeight } from './src/services/mixin'
 
 const Root = styled.div`
-  height: calc(100vh - 4.5rem);
-  min-height: calc(100vh - 4.5rem);
+  ${pageFullHeight}
 `
 
 export const wrapRootElement = ({ element }) => (
-  <Root id="cory">{element}</Root>
+  <Root>{element}</Root>
 )

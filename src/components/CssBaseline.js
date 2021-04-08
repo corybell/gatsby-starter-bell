@@ -2,6 +2,7 @@ import React from 'react'
 import { createGlobalStyle } from 'styled-components'
 import reset from 'styled-reset'
 import { spacing, fontSize, fontWeight, fontFamily, lineHeight, color } from 'services/theme'
+import { pageFullHeight } from 'services/mixin'
 
 const siteStyles = `
   #___gatsby, 
@@ -21,8 +22,7 @@ const siteStyles = `
   }
 
   html, body {
-    height: calc(100vh - 4.5rem);
-    min-height: calc(100vh - 4.5rem);
+    ${pageFullHeight}
     line-height: ${lineHeight.normal};
     font-size: ${fontSize[1]};
     font-family: ${fontFamily.primary};
