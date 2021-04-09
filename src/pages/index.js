@@ -1,13 +1,13 @@
 import React from "react"
-// import styled from 'styled-components'
 import Layout from "components/PageLayout"
 import Helmet from "components/Helmet"
+import { Title } from "components/Core"
 
 const IndexPage = () => {
   return (
     <Layout>
       <Helmet title="Home" />
-      <h1>Home</h1>
+      <Title>Home</Title>
     </Layout>
   )
 }

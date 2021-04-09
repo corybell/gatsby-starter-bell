@@ -1,12 +1,13 @@
 import React from "react"
 import Layout from "components/PageLayout"
 import Helmet from "components/Helmet"
+import { Title } from "components/Core"
 
 const ContactPage = () => {
   return (
     <Layout>
       <Helmet title="Contact" />
-      <h1>Contact</h1>
+      <Title>Contact</Title>
     </Layout>
   )
 }

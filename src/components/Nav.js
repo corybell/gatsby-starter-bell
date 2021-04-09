@@ -1,4 +1,5 @@
 import * as React from "react"
+import { StaticImage } from "gatsby-plugin-image"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import styled from "styled-components"
@@ -25,11 +26,11 @@ const Flex = styled.div`
   direction: column;
 `
 
-const TitleListItem = styled(Link)`
+const LogoListItem = styled(Link)`
   display: block;
   min-width: max-content;
   width: max-content;
-  margin: auto 0;
+  margin: auto 0 auto -0.55rem;
   @media (max-width: ${breakpoints.phone}) {
     display: none;
   }
@@ -41,7 +42,7 @@ const Spacer = styled.div`
   }
 `
 
-const Title = styled.h2`
+const Logo = styled.div`
   margin: 0;
   width: 100%;
 `
@@ -63,9 +64,16 @@ const NavLink = styled(Link)`
 const Nav = ({ siteTitle }) => (
   <Root>
     <Flex>
-      <TitleListItem to="/">
-        <Title>{siteTitle}</Title>
-      </TitleListItem>
+      <LogoListItem to="/">
+        <Logo>
+          <StaticImage
+            src="../images/logo.svg"
+            width={160}
+            alt="logo"
+            loading="eager"
+          />
+        </Logo>
+      </LogoListItem>
       <Spacer />
       <NavLink to="/" activeClassName="active">
         Home

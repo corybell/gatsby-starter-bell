@@ -20,6 +20,9 @@ const Container = styled.div`
 
 const Main = styled.main`
   min-height: 50vh;
+  background-color: white;
+  margin-top: 1rem;
+  padding: 1rem;
 `
 
 const Layout = ({ children }) => {
