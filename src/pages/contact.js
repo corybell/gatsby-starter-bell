@@ -1,6 +1,6 @@
-import React from 'react'
-import Layout from 'components/PageLayout'
-import Helmet from 'components/Helmet'
+import React from "react"
+import Layout from "components/PageLayout"
+import Helmet from "components/Helmet"
 
 const ContactPage = () => {
   return (

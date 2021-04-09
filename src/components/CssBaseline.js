@@ -1,8 +1,15 @@
-import React from 'react'
-import { createGlobalStyle } from 'styled-components'
-import reset from 'styled-reset'
-import { spacing, fontSize, fontWeight, fontFamily, lineHeight, color } from 'services/theme'
-import { pageFullHeight } from 'services/mixin'
+import React from "react"
+import { createGlobalStyle } from "styled-components"
+import reset from "styled-reset"
+import {
+  spacing,
+  fontSize,
+  fontWeight,
+  fontFamily,
+  lineHeight,
+  color,
+} from "services/theme"
+import { pageFullHeight } from "services/mixin"
 
 const siteStyles = `
   #___gatsby, 
@@ -220,11 +227,11 @@ const GlobalStyle = createGlobalStyle`
   ${siteStyles}
 `
 
-export default function CssBaseline ({ children }) {
+export default function CssBaseline({ children }) {
   return (
     <React.Fragment>
       <GlobalStyle />
-      { children }
+      {children}
     </React.Fragment>
   )
 }

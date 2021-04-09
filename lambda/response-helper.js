@@ -1,8 +1,7 @@
-
-function getHeaders () {
+function getHeaders() {
   return {
-    'Access-Control-Allow-Origin': '*',
-    'Content-Type': 'application/json',
+    "Access-Control-Allow-Origin": "*",
+    "Content-Type": "application/json",
   }
 }
 
@@ -14,7 +13,7 @@ function errorResponse(code, message) {
   }
 }
 
-function successResponse (body) {
+function successResponse(body) {
   return {
     statusCode: 200,
     body: JSON.stringify(body),

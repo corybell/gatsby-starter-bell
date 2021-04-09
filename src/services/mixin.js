@@ -1,4 +1,4 @@
-import { fontSize, color, fontWeight } from 'services/theme'
+import { fontSize, color, fontWeight } from "services/theme"
 
 export const pageFullHeight = `
   height: calc(100vh - 4.5rem);

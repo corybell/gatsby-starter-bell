@@ -1,12 +1,12 @@
-import * as React from 'react'
-import PropTypes from 'prop-types'
-import styled from 'styled-components'
-import { useStaticQuery, graphql } from 'gatsby'
-import CssBaseline from 'components/CssBaseline'
-import Nav from 'components/Nav'
-import Footer from 'components/Footer'
-import { maxWidth, spacing } from 'services/theme'
-import { pageFullHeight } from 'services/mixin'
+import * as React from "react"
+import PropTypes from "prop-types"
+import styled from "styled-components"
+import { useStaticQuery, graphql } from "gatsby"
+import CssBaseline from "components/CssBaseline"
+import Nav from "components/Nav"
+import Footer from "components/Footer"
+import { maxWidth, spacing } from "services/theme"
+import { pageFullHeight } from "services/mixin"
 
 const Container = styled.div`
   width: 100%;

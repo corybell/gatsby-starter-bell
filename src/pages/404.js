@@ -1,6 +1,6 @@
-import * as React from 'react'
-import Layout from 'components/PageLayout'
-import Helmet from 'components/Helmet'
+import * as React from "react"
+import Layout from "components/PageLayout"
+import Helmet from "components/Helmet"
 
 const NotFoundPage = () => (
   <Layout>

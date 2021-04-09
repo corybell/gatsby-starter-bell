@@ -1,9 +1,9 @@
-import * as React from 'react'
-import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
-import styled from 'styled-components'
-import { color, spacing, maxWidth, breakpoints } from 'services/theme'
-import { linkAnimation } from 'services/mixin'
+import * as React from "react"
+import PropTypes from "prop-types"
+import { Link } from "gatsby"
+import styled from "styled-components"
+import { color, spacing, maxWidth, breakpoints } from "services/theme"
+import { linkAnimation } from "services/mixin"
 
 const Root = styled.nav`
   width: 100%;
@@ -30,13 +30,13 @@ const TitleListItem = styled(Link)`
   min-width: max-content;
   width: max-content;
   margin: auto 0;
-  @media(max-width: ${breakpoints.phone}) {
+  @media (max-width: ${breakpoints.phone}) {
     display: none;
   }
 `
 const Spacer = styled.div`
   flex-grow: 1;
-  @media(max-width: ${breakpoints.phone}) {
+  @media (max-width: ${breakpoints.phone}) {
     display: none;
   }
 `
@@ -53,7 +53,7 @@ const NavLink = styled(Link)`
   margin: auto 0;
   padding-bottom: ${spacing[3]};
   margin-left: ${spacing[8]};
-  @media(max-width: ${breakpoints.phone}) {
+  @media (max-width: ${breakpoints.phone}) {
     margin-left: 0;
     margin-right: ${spacing[8]};
   }
@@ -67,9 +67,15 @@ const Nav = ({ siteTitle }) => (
         <Title>{siteTitle}</Title>
       </TitleListItem>
       <Spacer />
-      <NavLink to="/" activeClassName="active">Home</NavLink>
-      <NavLink to="/about/" activeClassName="active">About</NavLink>
-      <NavLink to="/contact/" activeClassName="active">Contact</NavLink>
+      <NavLink to="/" activeClassName="active">
+        Home
+      </NavLink>
+      <NavLink to="/about/" activeClassName="active">
+        About
+      </NavLink>
+      <NavLink to="/contact/" activeClassName="active">
+        Contact
+      </NavLink>
     </Flex>
   </Root>
 )
@@ -79,7 +85,7 @@ Nav.propTypes = {
 }
 
 Nav.defaultProps = {
-  siteTitle: '',
+  siteTitle: "",
 }
 
 export default Nav
