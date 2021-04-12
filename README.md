@@ -1,3 +1,10 @@
+## Clone this repo and go
+```shell
+mkdir new-project
+cd new-project
+git clone git@github.com:corybell/gatsby-starter-bell.git .
+```
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.com">
