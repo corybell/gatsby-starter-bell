@@ -5,6 +5,12 @@ cd new-project
 git clone git@github.com:corybell/gatsby-starter-bell.git .
 ```
 
+## Example .env file
+```
+# .env.development
+GATSBY_FUNCTIONS_URL=http://localhost:8888/.netlify/functions
+```
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.com">
