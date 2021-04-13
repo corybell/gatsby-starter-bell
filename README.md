@@ -3,6 +3,7 @@
 mkdir new-project
 cd new-project
 git clone git@github.com:corybell/gatsby-starter-bell.git .
+git remote rm origin
 ```
 
 ## Example .env file
