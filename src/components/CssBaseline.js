@@ -9,7 +9,6 @@ import {
   lineHeight,
   color,
 } from "services/theme"
-import { pageFullHeight } from "services/mixin"
 
 const siteStyles = `
   #___gatsby, 
@@ -29,7 +28,8 @@ const siteStyles = `
   }
 
   html, body {
-    ${pageFullHeight}
+    height: auto;
+    min-height: 100%;
     line-height: ${lineHeight.normal};
     font-size: ${fontSize[1]};
     font-family: ${fontFamily.primary};
@@ -57,7 +57,6 @@ const siteStyles = `
   h5,
   h6 {
     font-family: ${fontFamily.primary};
-    margin-top: ${spacing[12]};
     margin-bottom: ${spacing[6]};
     line-height: ${lineHeight.tight};
     letter-spacing: -0.025em;

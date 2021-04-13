@@ -6,7 +6,6 @@ import CssBaseline from "components/CssBaseline"
 import Nav from "components/Nav"
 import Footer from "components/Footer"
 import { maxWidth, spacing } from "services/theme"
-import { pageFullHeight } from "services/mixin"
 
 const Container = styled.div`
   width: 100%;
@@ -15,14 +14,6 @@ const Container = styled.div`
   padding: 1rem ${spacing[8]};
   z-index: 0;
   background-color: #eaeaea;
-  ${pageFullHeight}
-`
-
-const Main = styled.main`
-  min-height: 50vh;
-  background-color: white;
-  margin-top: 1rem;
-  padding: 1rem;
 `
 
 const Layout = ({ children }) => {
@@ -43,7 +34,7 @@ const Layout = ({ children }) => {
     <CssBaseline>
       <Nav siteTitle={title} />
       <Container>
-        <Main>{children}</Main>
+        <main>{children}</main>
         <Footer siteAuthor={author} />
       </Container>
     </CssBaseline>
